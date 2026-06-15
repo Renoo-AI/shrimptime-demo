@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Shrimp Time - Le Menu Pop</title>
+  <meta name="description" content="Découvrez le menu de Shrimp Time — Fruits de Mer, Fritures, Accompagnements, et Boissons. Savourez nos fruits de mer frais à La Marsa et L'Aouina.">
+  <meta property="og:title" content="Shrimp Time - Le Menu Pop | Fruits de Mer Frais">
+  <meta property="og:description" content="Découvrez le menu de Shrimp Time — Fruits de Mer, Fritures, Accompagnements, et Boissons. Savourez nos fruits de mer frais à La Marsa et L'Aouina.">
+  <meta property="og:image" content="https://shrimptime.vercel.app/public/og-image.jpg">
+  <meta property="og:url" content="https://shrimptime.vercel.app/menu/index.html">
+  <meta property="og:site_name" content="Shrimp Time">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shrimp Time - Le Menu Pop">
+  <meta name="twitter:description" content="Découvrez notre menu de fruits de mer frais à La Marsa et L'Aouina.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link rel="icon" type="image/png" href="../public/favicon.png">
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline-variant": "#c2c7cd",
+            "surface-container-high": "#e2e8f0",
+            "on-secondary": "#042A48",
+            "primary-fixed": "#cae6ff",
+            "tertiary-container": "#9BA31C",
+            "on-surface-variant": "#42474d",
+            "on-surface": "#042A48",
+            "on-primary-fixed": "#042a48",
+            "surface-bright": "#ffffff",
+            "on-error-container": "#93000a",
+            "secondary-fixed": "#ffe400",
+            "on-tertiary-fixed": "#ffffff",
+            "on-primary-container": "#ffffff",
+            "outline": "#72787e",
+            "on-primary-fixed-variant": "#042a48",
+            "primary-container": "#042A48",
+            "error": "#ba1a1a",
+            "surface-tint": "#042A48",
+            "tertiary-fixed": "#9BA31C",
+            "surface": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed-dim": "#a5cbea",
+            "tertiary-fixed-dim": "#9BA31C",
+            "on-secondary-fixed-variant": "#042A48",
+            "surface-container-highest": "#cbd5e1",
+            "on-error": "#ffffff",
+            "on-tertiary-container": "#ffffff",
+            "on-background": "#042A48",
+            "inverse-surface": "#042A48",
+            "secondary-container": "#FFE400",
+            "inverse-primary": "#a5cbea",
+            "surface-container": "#f8fafc",
+            "tertiary": "#9BA31C",
+            "error-container": "#ffdad6",
+            "background": "#f8fafc",
+            "surface-container-low": "#f1f5f9",
+            "on-secondary-fixed": "#042A48",
+            "surface-variant": "#f1f5f9",
+            "secondary": "#FFE400",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#ffffff",
+            "surface-dim": "#f1f5f9",
+            "primary": "#042A48",
+            "on-tertiary-fixed-variant": "#ffffff",
+            "secondary-fixed-dim": "#ffe400",
+            "on-secondary-container": "#042A48",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "48px",
+            "margin-mobile": "16px",
+            "gutter": "16px",
+            "base": "8px",
+            "container-max": "1000px"
+          },
+          "fontFamily": {
+            "label-bold": ["Be Vietnam Pro"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Be Vietnam Pro"],
+            "body-lg": ["Be Vietnam Pro"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "label-bold": ["13px", {"lineHeight": "18px", "fontWeight": "700"}],
+            "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "800"}],
+            "headline-lg": ["28px", {"lineHeight": "36px", "fontWeight": "800"}],
+            "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+            "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}],
+            "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "700"}],
+            "display-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .block-shadow {
+      box-shadow: 4px 4px 0px 0px rgba(4, 42, 72, 0.1);
+    }
+    .shrimp-badge {
+      transform: rotate(-8deg);
+    }
+    .organic-shape {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    .btn-pop:hover, .btn-hover-effect:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 4px 4px 0px 0px #042a48;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-element {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-element.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-img-wrap {
+      animation: floatSmooth 6s ease-in-out infinite;
+    }
+    @keyframes badgePulse {
+      0%, 100% { transform: rotate(-8deg) scale(1); }
+      50% { transform: rotate(-5deg) scale(1.05); }
+    }
+    @keyframes floatSmooth {
+      0%, 100% { transform: translateY(0) rotate(2deg); }
+      50% { transform: translateY(-15px) rotate(0deg); }
+    }
+    /* Floating Background Decorations */
+    .floating-deco {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.16;
+      filter: drop-shadow(0 10px 20px rgba(4, 42, 72, 0.06));
+      animation: floatDecoration 14s ease-in-out infinite alternate;
+    }
+    .floating-shrimp-1 {
+      width: 120px;
+      top: 250px;
+      left: 2%;
+      animation-duration: 16s;
+    }
+    .floating-crab-1 {
+      width: 110px;
+      top: 800px;
+      right: 3%;
+      animation-duration: 12s;
+      animation-delay: -2s;
+    }
+    .floating-shrimp-2 {
+      width: 90px;
+      top: 1600px;
+      left: 4%;
+      animation-duration: 18s;
+      animation-delay: -5s;
+    }
+    .floating-crab-2 {
+      width: 100px;
+      top: 2400px;
+      right: 3%;
+      animation-duration: 14s;
+      animation-delay: -7s;
+    }
+
+    /* Responsive PC sizing for watermark illustrations */
+    @media (min-width: 1024px) {
+      .floating-deco {
+        opacity: 0.28;
+      }
+      .floating-shrimp-1 {
+        width: 250px;
+        top: 200px;
+        left: 3%;
+      }
+      .floating-crab-1 {
+        width: 220px;
+        top: 750px;
+        right: 4%;
+      }
+      .floating-shrimp-2 {
+        width: 180px;
+        top: 1550px;
+        left: 5%;
+      }
+      .floating-crab-2 {
+        width: 200px;
+        top: 2300px;
+        right: 4%;
+      }
+    }
+
+    @keyframes floatDecoration {
+      0% {
+        transform: translateY(0) rotate(var(--shrimp-rot, 0deg));
+      }
+      50% {
+        transform: translateY(-20px) translateX(10px) rotate(calc(var(--shrimp-rot, 0deg) + 8deg));
+      }
+      100% {
+        transform: translateY(10px) translateX(-10px) rotate(calc(var(--shrimp-rot, 0deg) - 8deg));
+      }
+    }
+  </style>
+    <style>
+    /* Specific overrides for JS generated menu items */
+    .menu-card {
+      display: flex;
+      background: #ffffff;
+      border-radius: 1rem;
+      border: 2px solid #042a48;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      box-shadow: 3px 3px 0px 0px rgba(4, 42, 72, 0.1);
+    }
+    .menu-card:hover {
+      transform: translateY(-2px);
+    }
+    .menu-card-img {
+      width: 100px;
+      background-color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      border-right: 2px solid #042a48;
+      flex-shrink: 0;
+    }
+    .menu-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .menu-card-content {
+      padding: 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+    }
+    .menu-card-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      font-size: 1.125rem;
+      color: #042a48;
+    }
+    .menu-card-price {
+      font-weight: 700;
+      color: #9ba31c;
+      white-space: nowrap;
+    }
+    .menu-card-desc {
+      font-size: 0.875rem;
+      color: #42474d;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+    .category-section {
+      margin-bottom: 3rem;
+    }
+    .category-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      color: #042a48;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #042a48;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .menu-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      .menu-card {
+        flex-direction: column;
+      }
+      .menu-card-img {
+        width: 100%;
+        height: 120px;
+        border-right: none;
+        border-bottom: 2px solid #042a48;
+      }
+    }
+  </style>
+<style>
+
+/* Shopping Cart Styles */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.cart-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  background: #ffffff;
+  z-index: 100;
+  box-shadow: -4px 0 20px rgba(4, 42, 72, 0.15);
+  border-left: 2px solid #042A48;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cart-drawer.active {
+  right: 0;
+}
+/* RTL mirroring */
+html[dir="rtl"] .cart-drawer {
+  right: auto;
+  left: -100%;
+  border-left: none;
+  border-right: 2px solid #042A48;
+  box-shadow: 4px 0 20px rgba(4, 42, 72, 0.15);
+  transition: left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+html[dir="rtl"] .cart-drawer.active {
+  left: 0;
+}
+
+/* Floating Cart Button */
+.floating-cart-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 80;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background-color: #042A48;
+  border: 2px solid #042A48;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px 0px rgba(255, 228, 0, 1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.floating-cart-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px rgba(255, 228, 0, 1);
+}
+html[dir="rtl"] .floating-cart-btn {
+  right: auto;
+  left: 1.5rem;
+}
+.cart-badge {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  background-color: #FFE400;
+  color: #042A48;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #042A48;
+}
+html[dir="rtl"] .cart-badge {
+  right: auto;
+  left: -0.25rem;
+}
+
+/* Success Checkmark Animation */
+.success-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.success-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.success-card {
+  background-color: var(--color-white, #ffffff);
+  padding: 40px;
+  border-radius: var(--radius-card, 1.5rem);
+  text-align: center;
+  transform: scale(0.8) translateY(20px);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid var(--color-navy, #001a2b);
+  box-shadow: 4px 4px 0px var(--color-navy, #001a2b);
+  max-width: 90%;
+  width: 320px;
+}
+
+.success-modal.active .success-card {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.success-checkmark {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.success-checkmark .check-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  stroke: var(--color-olive, #8B9A3D);
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.success-checkmark .check-icon {
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  transform-origin: 50% 50%;
+  stroke-width: 4;
+  stroke: var(--color-olive, #8B9A3D);
+  fill: none;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden relative">
+  <!-- Floating Background Decorations -->
+  <img src="../public/shrimp1.png" class="floating-deco floating-shrimp-1" style="--shrimp-rot: 15deg;" alt="" aria-hidden="true" onerror="this.remove()">
+  <img src="../public/crap.png" class="floating-deco floating-crab-1" style="--shrimp-rot: -25deg;" alt="" aria-hidden="true" onerror="this.remove()">
+  <img src="../public/shrimp1.png" class="floating-deco floating-shrimp-2" style="--shrimp-rot: 65deg;" alt="" aria-hidden="true" onerror="this.remove()">
+  <img src="../public/crap.png" class="floating-deco floating-crab-2" style="--shrimp-rot: -45deg;" alt="" aria-hidden="true" onerror="this.remove()">
+
+  <!-- Floating Island TopNavBar -->
+  <header class="fixed top-4 xl:top-6 left-0 right-0 z-50 px-4 md:px-0 pointer-events-none flex justify-center fade-element">
+    <nav class="pointer-events-auto bg-surface/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(4,42,72,0.12)] border-2 border-primary/10 hover:border-primary/30 rounded-full px-4 md:px-6 py-2.5 flex items-center justify-between gap-4 md:gap-8 w-full max-w-4xl mx-auto transition-all duration-300">
+      <a href="../index.html" class="font-display-lg text-lg md:text-headline-sm text-primary flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity">
+        <img src="https://dropshare.42web.io/1/files/8IFxJTeU9Z.png" alt="Shrimp Time Logo" class="h-9 w-9 md:h-11 md:w-11 rounded-[12px] border-2 border-primary object-cover shadow-sm" onerror="this.src='../public/favicon.png'" />
+        <span class="hidden sm:inline">Shrimp Time</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a class="font-headline-md text-body-lg text-secondary border-b-2 border-secondary font-bold whitespace-nowrap transition-colors" href="index.html" data-i18n="nav_menu">Le Menu</a>
+        <a class="font-headline-md text-body-lg text-primary hover:text-secondary font-bold whitespace-nowrap transition-colors" href="../index.html#branches" data-i18n="nav_branches">Branches</a>
+        <div class="w-1 h-1 rounded-full bg-primary/30"></div>
+        <div class="flex items-center gap-3 font-label-bold text-sm bg-primary/5 px-3 py-1.5 rounded-full">
+          <button class="text-primary hover:text-secondary lang-btn btn-fr" onclick="setLang('fr')">FR</button>
+          <button class="text-primary hover:text-secondary lang-btn btn-ar" onclick="setLang('ar')">AR</button>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex md:hidden items-center gap-2 font-label-bold text-xs bg-primary/5 px-2 py-1 rounded-full mr-1">
+          <button class="text-primary hover:text-secondary lang-btn btn-fr" onclick="setLang('fr')">FR</button>
+          <button class="text-primary hover:text-secondary lang-btn btn-ar" onclick="setLang('ar')">AR</button>
+        </div>
+        <a class="hidden sm:inline-block px-6 py-2 rounded-full border-2 border-primary bg-secondary-container text-primary font-label-bold text-sm block-shadow whitespace-nowrap btn-hover-effect transition-all" href="../index.html#reservation" data-i18n="nav_reserve">Réserver</a>
+        <button id="mobile-menu-btn" aria-label="Ouvrir le menu" class="md:hidden bg-primary text-white h-10 w-10 flex items-center justify-center rounded-full transition-transform hover:scale-105 shadow-md border-2 border-primary">
+          <span class="material-symbols-outlined text-[20px]">grid_view</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Modern Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-surface/60 backdrop-blur-2xl opacity-0 pointer-events-none transition-opacity duration-300">
+    <button id="mobile-menu-close" aria-label="Fermer le menu" class="absolute top-8 right-8 h-12 w-12 flex items-center justify-center bg-white rounded-full block-shadow border-2 border-primary text-primary hover:text-secondary transition-all hover:scale-105 font-bold z-50">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    <nav class="flex flex-col gap-4 text-center w-full max-w-[85%] mx-auto mt-4">
+      <a class="mobile-nav-link flex items-center justify-center gap-4 p-5 rounded-2xl bg-white border-2 border-primary block-shadow font-headline-lg text-2xl text-primary hover:translate-y-[-2px] hover:bg-slate-50 transition-all" href="../index.html">
+        <span class="material-symbols-outlined text-3xl shrink-0 text-tertiary">home</span>
+        <span data-i18n="nav_home">Accueil</span>
+      </a>
+      <a class="mobile-nav-link flex items-center justify-center gap-4 p-5 rounded-2xl bg-white border-2 border-primary block-shadow font-headline-lg text-2xl text-primary hover:translate-y-[-2px] hover:bg-slate-50 transition-all" href="index.html">
+        <span class="material-symbols-outlined text-3xl shrink-0 text-tertiary">restaurant_menu</span>
+        <span data-i18n="nav_menu">Le Menu</span>
+      </a>
+      <a class="mobile-nav-link flex items-center justify-center gap-4 p-5 rounded-2xl bg-white border-2 border-primary block-shadow font-headline-lg text-2xl text-primary hover:translate-y-[-2px] hover:bg-slate-50 transition-all" href="../index.html#branches">
+        <span class="material-symbols-outlined text-3xl shrink-0 text-tertiary">location_on</span>
+        <span data-i18n="nav_branches">Branches</span>
+      </a>
+      <a class="mobile-nav-link flex items-center justify-center gap-4 p-5 rounded-2xl bg-secondary-container border-2 border-primary block-shadow font-headline-lg text-2xl text-primary hover:translate-y-[-2px] hover:brightness-105 transition-all mt-4" href="../index.html#reservation">
+        <span class="material-symbols-outlined text-3xl shrink-0 text-primary">edit_calendar</span>
+        <span data-i18n="nav_reserve">Réserver</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Hero / Header Section -->
+  <header class="relative px-margin-mobile md:px-margin-desktop py-8 md:py-16 pt-28 md:pt-36 overflow-hidden fade-element">
+    <div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-gutter items-center">
+      <div class="z-10">
+        <span class="inline-block bg-tertiary text-white font-bold px-4 py-1 rounded-full text-label-bold mb-4 block-shadow shrimp-badge uppercase tracking-wider" data-i18n="hero_badge">Fraîcheur Absolue</span>
+        <h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-4" data-i18n="menu_hero_title">Savourez le grand bleu, façon Shrimp Time.</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-6" data-i18n="menu_hero_desc">Tous les plats en DT, du plateau au soda. Une expérience iodée unique où la fraîcheur de la mer rencontre l'énergie pop.</p>
+        <div class="flex gap-4 flex-wrap" id="full-menu-tabs">
+          <!-- Categories via JS -->
+        </div>
+      </div>
+      <div class="relative mt-8 md:mt-0 hero-img-wrap">
+        <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed rounded-full opacity-20 blur-3xl"></div>
+        <div class="relative z-10 border-2 border-primary rounded-xl overflow-hidden block-shadow bg-white">
+          <img alt="Crevettes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKXfrbL5Tf4VfECfTXFwq7uewBE-XKkRZ0e6vGBBOchN14XzWIAWejY42Ll4ryJw8RSCOezqODApm-xLQ2JxhLRqDrXOjTnDTEjH34BKCrknCZMVojnAiwY2Tyfm7jzGUxNzqB1tRXNg1AfOBdThVg4zqMxiILER-ECRAaVYQGIMywtsMFxwgWylaKCXYDLhfyW0q4W1Bs_FpNfxP8Oj7ub0NeAZCLRNDvMlWzlOSyaqaP6MxLpSFxmSuBdtp5tcGA5cdK2hBnZctE" onerror="this.outerHTML='<div class=&quot;p-10 text-center font-display-lg text-8xl&quot;>🦐</div>'"/>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-secondary-container border-2 border-primary p-3 rounded-xl block-shadow shrimp-badge z-20">
+          <p class="font-display-lg text-headline-md text-primary">49 DT</p>
+          <p class="font-label-bold text-label-bold text-primary" data-i18n="menu_hero_badge">Spécialité Maison</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sauces Callout -->
+  <section class="bg-primary py-8 text-on-primary fade-element">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-center gap-8">
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">ink_selection</span>
+        <h2 class="font-headline-md text-headline-md text-white" data-i18n="sauces_title">Sauces disponibles :</h2>
+      </div>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="bg-white/10 border border-white/20 px-6 py-2 rounded-full font-bold text-white" data-i18n="sauce_creme">Crème</span>
+        <span class="bg-secondary-container text-primary px-6 py-2 rounded-full font-bold" data-i18n="sauce_cajun">Cajun</span>
+        <span class="bg-white/10 border border-white/20 px-6 py-2 rounded-full font-bold text-white" data-i18n="sauce_citron_ail">Citron &amp; Ail</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Menu Container (Filled by JS) -->
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16" id="full-menu-container">
+    <!-- Menu items injected here by JS categorized visually -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary w-full mt-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-10 max-w-container-max mx-auto text-on-primary">
+      <div>
+        <div class="font-headline-lg text-headline-md text-secondary-container mb-3 flex items-center gap-2">
+          <img src="https://dropshare.42web.io/1/files/8IFxJTeU9Z.png" alt="Logo" class="h-8 w-8 rounded-[8px] border-2 border-white/20 object-cover" onerror="this.src='../public/favicon.png'" /> Shrimp Time
+        </div>
+        <p class="text-surface-variant/80 font-body-md text-white text-sm" data-i18n="footer_desc">Restaurant de fruits de mer à Tunis. Qualité premium et saveurs côtières inoubliables.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-label-bold text-white" data-i18n="footer_quick_links">Liens Rapides</h4>
+        <div class="flex flex-col gap-1">
+          <a class="text-surface-variant/80 hover:text-secondary-container transition-colors font-body-md text-white text-sm" href="index.html" data-i18n="nav_menu">Le Menu</a>
+          <a class="text-surface-variant/80 hover:text-secondary-container transition-colors font-body-md text-white text-sm" href="../index.html#reservation" data-i18n="nav_reserve">Réserver</a>
+          <a class="text-surface-variant/80 hover:text-secondary-container transition-colors font-body-md text-white text-sm" href="tel:+21698900372"><span data-i18n="footer_call">Appeler</span> (98 900 372)</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3">
+        <h4 class="font-label-bold text-white" data-i18n="footer_follow">Suivez-nous</h4>
+        <div class="flex gap-3">
+          <a class="text-surface-variant/80 hover:text-secondary-container transition-transform scale-105 text-white" aria-label="Instagram" href="https://www.instagram.com/shrimp_.time/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"/>
+              <circle cx="16.806" cy="7.207" r="1.078"/>
+              <path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.348.072.696.172 1.033a4.59 4.59 0 0 0 2.46 2.461 6.58 6.58 0 0 0 2.185.418c.961.043 1.266.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.418 4.592 4.592 0 0 0 2.46-2.461 6.583 6.583 0 0 0 .419-2.185c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a3.005 3.005 0 0 1-1.704 1.704 4.969 4.969 0 0 1-1.638.318c-.915.04-1.196.049-3.57.049s-2.657 0-3.571-.049a4.963 4.963 0 0 1-1.637-.318 2.996 2.996 0 0 1-1.705-1.704 4.94 4.94 0 0 1-.318-1.637c-.04-.915-.049-1.193-.049-3.571 0-2.378 0-2.658.049-3.57.018-.323.072-.642.161-.951a3.037 3.037 0 0 1 1.543-1.543 4.937 4.937 0 0 1 1.637-.318c.915-.04 1.192-.049 3.57-.049 2.379 0 2.656 0 3.57.049a4.954 4.954 0 0 1 1.639.318 3.003 3.003 0 0 1 1.704 1.704 4.981 4.981 0 0 1 .318 1.638c.04.915.049 1.193.049 3.57 0 2.379 0 2.657-.049 3.57a4.956 4.956 0 0 1-.318 1.638z"/>
+            </svg>
+          </a>
+          <a class="text-surface-variant/80 hover:text-secondary-container transition-transform scale-105 text-white" aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61559768967974" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="text-surface-variant/60 font-body-md mt-4 text-white text-xs" id="copyright" data-i18n="footer_rights">© 2026 Shrimp Time. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+// i18n data
+const i18n = {
+  fr: {
+    nav_home: "Accueil",
+    nav_menu: "Le Menu",
+    nav_branches: "Branches",
+    nav_reserve: "Réserver",
+    hero_badge: "Fraîcheur Absolue",
+    hero_title: "Fruits de mer frais à La Marsa et L'Aouina",
+    hero_desc: "Menu premium, réservation WhatsApp rapide, ambiance marine. Deux restaurants, une même expérience gourmande.",
+    hero_btn_menu: "Voir le Menu",
+    hero_btn_reserve: "Réserver",
+    menu_preview_title: "Notre Menu Pop",
+    menu_preview_desc: "Fruits de mer, fritures, accompagnements et boissons — tout en DT. Des plats frais et croustillants préparés à la commande.",
+    menu_preview_btn: "Consulter toute la carte",
+    branches_title: "Nos deux adresses",
+    branches_desc: "La Marsa et L'Aouina, mêmes saveurs, même service.",
+    reserve_title: "Réservez votre table",
+    reserve_desc: "Veuillez remplir les détails ci-dessous pour confirmer votre venue via WhatsApp. Sans engagement.",
+    reserve_branch: "Choisissez votre succursale *",
+    reserve_name: "Nom Complet *",
+    reserve_phone: "Numéro de Téléphone *",
+    reserve_guests: "Convives *",
+    reserve_date: "Date *",
+    reserve_time: "Heure *",
+    reserve_requests: "Demandes spéciales (Optionnel)",
+    reserve_submit: "Confirmer via WhatsApp",
+    sidebar_badge: "Frais & Pop!",
+    sidebar_hours: "Horaires",
+    sidebar_contact: "Contact Direct",
+    sidebar_contact_desc: "Vous avez une question ? N'hésitez pas à nous appeler directement ou à nous envoyer un email.",
+    reviews_title: "Avis clients",
+    reviews_desc: "4.4 ★ sur 398 avis Google",
+    footer_desc: "Restaurant de fruits de mer à Tunis. Qualité premium et saveurs côtières inoubliables.",
+    footer_quick_links: "Liens Rapides",
+    footer_call: "Appeler",
+    footer_follow: "Suivez-nous",
+    footer_rights: "© 2026 Shrimp Time. Tous droits réservés.",
+    
+    // For menu page
+    menu_hero_title: "Savourez le grand bleu, façon Shrimp Time.",
+    menu_hero_desc: "Tous les plats en DT, du plateau au soda. Une expérience iodée unique où la fraîcheur de la mer rencontre l'énergie pop.",
+    menu_hero_badge: "Spécialité Maison",
+    sauces_title: "Sauces disponibles :",
+    sauce_creme: "Crème",
+    sauce_cajun: "Cajun",
+    sauce_citron_ail: "Citron & Ail",
+    
+    // Stepper
+    step_1: "Branche",
+    step_2: "Détails",
+    step_3: "Contact",
+    btn_next: "Suivant",
+    btn_prev: "Retour",
+    error_branch: "Veuillez sélectionner une succursale.",
+    reserve_name_placeholder: "Ex: Jean Dupont",
+    reserve_requests_placeholder: "Une table près de la fenêtre..."
+  },
+  ar: {
+    nav_home: "الرئيسية",
+    nav_menu: "عرض القائمة",
+    nav_branches: "عناويننا",
+    nav_reserve: "احجز الآن",
+    hero_badge: "طزاجة مطلقة",
+    hero_title: "أشهى المأكولات البحرية في المرسى والعوينة",
+    hero_desc: "قائمة طعام مميزة، حجز سريع عبر واتساب، أجواء بحرية. مطعمان، نفس التجربة الشهية.",
+    hero_btn_menu: "عرض القائمة",
+    hero_btn_reserve: "احجز",
+    menu_preview_title: "قائمتنا المميزة",
+    menu_preview_desc: "مأكولات بحرية، مقالي، أطباق جانبية ومشروبات — خيارات متنوعة. أطباق طازجة ومقرمشة تحضر عند الطلب.",
+    menu_preview_btn: "تصفح القائمة كاملة",
+    branches_title: "عنوانينا",
+    branches_desc: "المرسى والعوينة، نفس النكهات، نفس الخدمة.",
+    reserve_title: "احجز طاولتك",
+    reserve_desc: "يرجى ملء التفاصيل أدناه لتأكيد حضورك عبر واتساب. بدون التزام.",
+    reserve_branch: "اختر الفرع *",
+    reserve_name: "الاسم الكامل *",
+    reserve_phone: "رقم الهاتف *",
+    reserve_guests: "عدد الضيوف *",
+    reserve_date: "التاريخ *",
+    reserve_time: "الوقت *",
+    reserve_requests: "طلبات خاصة (اختياري)",
+    reserve_submit: "تأكيد عبر واتساب",
+    sidebar_badge: "طازج ولذيذ!",
+    sidebar_hours: "أوقات العمل",
+    sidebar_contact: "اتصال مباشر",
+    sidebar_contact_desc: "لديك سؤال؟ لا تتردد في الاتصال بنا مباشرة أو إرسال بريد إلكتروني.",
+    reviews_title: "آراء العملاء",
+    reviews_desc: "4.4 ★ من 398 تقييم على جوجل",
+    footer_desc: "مطعم مأكولات بحرية في تونس. جودة عالية ونكهات لا تُنسى.",
+    footer_quick_links: "روابط سريعة",
+    footer_call: "اتصل بنا",
+    footer_follow: "تابعنا",
+    footer_rights: "© 2026 شريمب تايم. جميع الحقوق محفوظة.",
+    
+    menu_hero_title: "استمتع بالبحر على طريقة شريمب تايم.",
+    menu_hero_desc: "كل الأطباق بالدينار التونسي. تجربة فريدة حيث تلتقي طزاجة البحر بالطاقة الإيجابية.",
+    menu_hero_badge: "تخصص المطعم",
+    sauces_title: "الصلصات المتوفرة :",
+    sauce_creme: "كريمة",
+    sauce_cajun: "كاجون",
+    sauce_citron_ail: "ليمون وثوم",
+    
+    // Stepper
+    step_1: "الفرع",
+    step_2: "التفاصيل",
+    step_3: "اتصال",
+    btn_next: "التالي",
+    btn_prev: "السابق",
+    error_branch: "الرجاء تحديد الفرع.",
+    reserve_name_placeholder: "مثال: محمد بن علي",
+    reserve_requests_placeholder: "طاولة بجانب النافذة..."
+  }
+};
+
+// Add translation styles
+const i18nStyles = document.createElement('style');
+i18nStyles.textContent = `
+/* RTL overrides */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700;800&display=swap');
+html[dir="rtl"] { font-family: 'Alexandria', sans-serif; }
+html[dir="rtl"] .font-display-lg, html[dir="rtl"] .font-headline-lg, html[dir="rtl"] .font-headline-md, html[dir="rtl"] .font-headline-lg-mobile, html[dir="rtl"] .font-label-bold, html[dir="rtl"] .font-body-lg, html[dir="rtl"] .font-body-md { font-family: 'Alexandria', sans-serif !important; }
+
+/* Language Buttons */
+.lang-btn { opacity: 0.6; transition: opacity 0.3s, border-color 0.3s; border-bottom: 2px solid transparent; }
+html[lang="fr"] .btn-fr { opacity: 1; border-color: currentColor; }
+html[lang="ar"] .btn-ar { opacity: 1; border-color: currentColor; }
+html[lang="ar"] .lang-fr { display: none !important; }
+html:not([lang="ar"]) .lang-ar { display: none !important; }
+
+/* RTL arrow flipping */
+html[dir="rtl"] .btn-next .material-symbols-outlined,
+html[dir="rtl"] .btn-prev .material-symbols-outlined {
+  transform: scaleX(-1);
+}
+
+`;
+document.head.appendChild(i18nStyles);
+
+window.setLang = function(lang) {
+  window.currentLang = lang;
+  localStorage.setItem('shrimp_lang', lang);
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      // Check if it's an input/textarea placeholder
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT') {
+          // If it's the first option of a select
+          if(el.tagName === 'SELECT' && el.options.length > 0 && el.options[0].value === "") {
+              el.options[0].textContent = i18n[lang][key];
+          } else {
+              el.placeholder = i18n[lang][key];
+          }
+      } else {
+          el.innerHTML = i18n[lang][key];
+      }
+    }
+  });
+
+  const evt = new Event('langChanged');
+  window.dispatchEvent(evt);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.currentLang = localStorage.getItem('shrimp_lang') || 'fr';
+  setLang(window.currentLang);
+});
+
+/**
+ * Shrimp Time - Application Logic
+ */
+
+const DATA = {
+  phone: "+21698900372",
+  phoneDisplay: "98 900 372",
+  email: "shrimptime270@gmail.com",
+  hours: "Mar–Dim · 12:00 – 23:30",
+  categories: [
+    { id: "seafood", name: "Fruits de Mer", nameAr: "مأكولات بحرية" },
+    { id: "crispy", name: "Fritures", nameAr: "مقالي" },
+    { id: "sides", name: "Accompagnements", nameAr: "أطباق جانبية" },
+    { id: "drinks", name: "Boissons", nameAr: "مشروبات" }
+  ],
+  branches: [
+    {
+      id: "La Marsa",
+      name: "La Marsa",
+      address: "La Marsa Plage, face à Zephyr"
+    },
+    {
+      id: "L'Aouina",
+      name: "L'Aouina",
+      address: "Sous le Centre Médical Aïcha, Cité El Wahat"
+    }
+  ],
+  timeSlots: [
+    "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", 
+    "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", 
+    "22:00", "22:30"
+  ],
+  menuItems: [
+    { id: "crevettes-12", category: "seafood", name: "Crevettes 12 Pièces", nameAr: "12 قطعة جمبري", price: 49, description: "12 crevettes + riz + salade", descriptionAr: "12 جمبري + أرز + سلطة", emoji: "🦐", image: "public/shrimp12.png" },
+    { id: "crevettes-6", category: "seafood", name: "Crevettes 6 Pièces", nameAr: "6 قطع جمبري", price: 29, description: "6 crevettes + riz + salade", descriptionAr: "6 جمبري + أرز + سلطة", emoji: "🦐", image: "public/shrimp6.png" },
+    { id: "moules", category: "seafood", name: "Moules", nameAr: "بلح البحر", price: 25, description: "Moules fraîches, portion généreuse", descriptionAr: "بلح البحر طازج، وجبة وفيرة", emoji: "🦪", image: "public/moules.png" },
+    { id: "crabe", category: "seafood", name: "Crabe", nameAr: "سلطعون", price: 25, description: "Crabe entier préparé", descriptionAr: "سلطعون كامل", emoji: "🦀", image: "public/crap.png" },
+    { id: "mix-2", category: "seafood", name: "Mix Fruits de Mer (2 Pers.)", nameAr: "مكس بحري (لشخصين)", price: 80, description: "8 crevettes, 2 crabes, 8 moules, 250g poulpe, 250g calamar", descriptionAr: "8 جمبري، 2 سلطعون، 8 بلح البحر، 250غ أخطبوط، 250غ حبار", emoji: "🦞", image: "https://images.pexels.com/photos/8694615/pexels-photo-8694615.jpeg" },
+    { id: "langouste", category: "seafood", name: "Langouste", nameAr: "جراد البحر", price: 120, description: "Langouste grillée + riz + salade", descriptionAr: "جراد البحر مشوي + أرز + سلطة", emoji: "🦞", image: "public/Langouste.png" },
+    { id: "mix-4", category: "seafood", name: "Mix Fruits de Mer (4 Pers.)", nameAr: "مكس بحري (4 أشخاص)", price: 270, description: "1 kg de chaque : calamar, poulpe, crevettes, crabe, moules", descriptionAr: "1 كغ من كل نوع: حبار، أخطبوط، جمبري، سلطعون، بلح البحر", emoji: "🦐", image: "https://images.pexels.com/photos/37642157/pexels-photo-37642157.jpeg" },
+    { id: "frites", category: "crispy", name: "Frites", nameAr: "بطاطا مقلية", price: 5, description: "Frites dorées maison", descriptionAr: "بطاطا مقلية ذهبية", emoji: "🍟", image: "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg" },
+    { id: "frites-cajun", category: "crispy", name: "Frites Cajun", nameAr: "بطاطا كاجون", price: 7, description: "Frites assaisonnées au cajun épicé", descriptionAr: "بطاطا بنكهة توابل الكاجون الحارة", emoji: "🍟", image: "https://images.pexels.com/photos/115740/pexels-photo-115740.jpeg" },
+    { id: "poulet", category: "crispy", name: "Filet de Poulet", nameAr: "فيليه دجاج", price: 15, description: "Filet de poulet croustillant", descriptionAr: "فيليه دجاج مقرمش", emoji: "🍗", image: "https://images.pexels.com/photos/60616/pexels-photo-60616.jpeg" },
+    { id: "fish-chips-kids", category: "crispy", name: "Fish & Chips Enfant", nameAr: "فيش آند تشيبس (أطفال)", price: 17, description: "Portion enfant — poisson pané + frites", descriptionAr: "وجبة أطفال — سمك بانيه وبطاطا المقرمشة", emoji: "🐟", image: "https://images.pexels.com/photos/1123250/pexels-photo-1123250.jpeg" },
+    { id: "calamars", category: "crispy", name: "Calamars Frits", nameAr: "حبار مقلي", price: 23, description: "Anneaux de calamar croustillants + tartare", descriptionAr: "حلقات حبار مقرمشة + صوص تارتار", emoji: "🦑", image: "https://images.pexels.com/photos/14786461/pexels-photo-14786461.jpeg" },
+    { id: "crevettes-frites", category: "crispy", name: "Crevettes Frites", nameAr: "جمبري مقلي", price: 23, description: "Crevettes croustillantes panées", descriptionAr: "جمبري مقرمش بانيه", emoji: "🦐", image: "https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg" },
+    { id: "fish-chips-adulte", category: "crispy", name: "Fish & Chips Adulte", nameAr: "فيش آند تشيبس", price: 28, description: "Poisson pané, frites, sauce tartare", descriptionAr: "سمك بانيه، بطاطا المقرمشة، صوص تارتار", emoji: "🐟", image: "https://images.pexels.com/photos/1123250/pexels-photo-1123250.jpeg" },
+    { id: "mix-friture", category: "crispy", name: "Mix Friture Fruits de Mer", nameAr: "مكس مقالي بحرية", price: 35, description: "Poisson, calamar, crevettes — trio croustillant", descriptionAr: "سمك، حبار، جمبري — ثلاثي مقرمش", emoji: "🦑", image: "https://images.pexels.com/photos/10875192/pexels-photo-10875192.jpeg" },
+    { id: "tartare", category: "sides", name: "Sauce Tartare", nameAr: "صوص تارتار", price: 2, description: "Sauce tartare maison", descriptionAr: "صوص تارتار الطازج", emoji: "🥄", image: "public/sauce-tartare.png" },
+    { id: "dynamite", category: "sides", name: "Sauce Dynamite", nameAr: "صوص داينمايت", price: 2, description: "Sauce épicée signature", descriptionAr: "صوص حار مميز", emoji: "🥄", image: "public/sauce-dynamite.png" },
+    { id: "cajun", category: "sides", name: "Sauce Cajun", nameAr: "صوص كاجون", price: 3, description: "Sauce relevée au cajun", descriptionAr: "صوص بتوابل الكاجون", emoji: "🥄", image: "public/sauce-cajun.png" },
+    { id: "citron-ail", category: "sides", name: "Sauce Citron & Ail", nameAr: "صوص الليمون والثوم", price: 3, description: "Sauce fraîche citronnée à l'ail", descriptionAr: "صوص منعش بالليمون والثوم", emoji: "🥄", image: "public/sauce-citron-ail.png" },
+    { id: "salade", category: "sides", name: "Salade", nameAr: "سلطة", price: 3.5, description: "Salade verte fraîche", descriptionAr: "سلطة خضراء طازجة", emoji: "🥗", image: "https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg" },
+    { id: "riz", category: "sides", name: "Riz safrané", nameAr: "أرز بالزعفران", price: 3.5, description: "Riz blanc parfumé", descriptionAr: "أرز أبيض معطر", emoji: "🍚", image: "https://images.pexels.com/photos/17696668/pexels-photo-17696668.jpeg" },
+    { id: "soupe", category: "sides", name: "Soupe de fruits de mer", nameAr: "حساء مأكولات بحرية", price: 12, description: "Soupe de fruits de mer maison", descriptionAr: "حساء مأكولات بحرية الطازجة", emoji: "🍜", image: "https://images.pexels.com/photos/23627792/pexels-photo-23627792.jpeg" },
+    { id: "eau", category: "drinks", name: "Eau Minérale", nameAr: "مياه معدنية", price: 1, description: "Bouteille d'eau minérale 1L", descriptionAr: "زجاجة مياه 1 لتر", emoji: "💧", image: "public/eau.png" },
+    { id: "soda", category: "drinks", name: "Boissons Gazeuses", nameAr: "مشروبات غازية", price: 3, description: "Boga Cidre, Coca-Cola, Fanta, Sprite", descriptionAr: "بوجا سيدر، كوكا كولا، فانتا، سبرايت", emoji: "🥤", image: "public/boga-cidre.png" },
+    { id: "citronnade", category: "drinks", name: "Jus de Citron", nameAr: "عصير الليمون", price: 3.5, description: "Citronnade fraîche maison", descriptionAr: "عصير ليمون طازج منعش", emoji: "🍋", image: "https://images.pexels.com/photos/2109099/pexels-photo-2109099.jpeg" }
+  ]
+};
+
+// --- Homepage Initialization ---
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.getElementById('menu-grid')) {
+    initHomepage();
+  }
+  
+  if (document.getElementById('full-menu-container')) {
+    initFullMenu();
+  }
+  
+  initMobileMenu();
+});
+
+
+// Initialize components only once
+// (Language changing handles CSS toggling automatically)
+window.addEventListener('langChanged', () => {
+  if (document.getElementById('reservation-form')) updateFormOptions();
+});
+
+function initHomepage() {
+  renderBranches();
+  renderMenuPreview();
+  initFormElements();
+  initAnimations();
+}
+
+function initAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+
+  document.querySelectorAll('.fade-element').forEach(el => observer.observe(el));
+}
+
+function renderBranches() {
+  const container = document.getElementById('branches-grid');
+  if (!container) return;
+  
+  const isAr = window.currentLang === 'ar';
+  
+  container.innerHTML = DATA.branches.map(branch => `
+    <div class="bg-surface border-2 border-primary p-4 lg:p-6 rounded-xl block-shadow transition-transform hover:-translate-y-1">
+      <h3 class="font-headline-md text-lg text-primary mb-2 flex items-center gap-2">
+        <span class="material-symbols-outlined text-tertiary" data-icon="location_on">location_on</span>
+        <span class="lang-fr">${branch.name}</span>
+        <span class="lang-ar">${branch.nameAr || branch.name}</span>
+      </h3>
+      <p class="text-on-surface-variant font-body-md text-sm mb-4">
+        <span class="lang-fr">${branch.address}</span>
+        <span class="lang-ar">${branch.addressAr || branch.address}</span>
+      </p>
+      <a href="tel:${DATA.phone}" class="inline-flex items-center justify-center w-full py-2.5 bg-primary text-white font-label-bold rounded-full btn-hover-effect">
+        <span class="material-symbols-outlined mr-2 text-sm" data-icon="call">call</span>
+        <span class="lang-fr">Appeler</span>
+        <span class="lang-ar">اتصل بنا</span>
+      </a>
+    </div>
+  `).join('');
+}
+
+function getLocalImageUrl(item) {
+  if (!item.image) return '';
+  if (item.image.startsWith('http')) return item.image;
+  if (item.image.startsWith('public/')) {
+    const isMenuPage = !!document.getElementById('full-menu-container');
+    return (isMenuPage ? '../' : '') + item.image;
+  }
+  return '/assets/images/menu/' + item.image;
+}
+
+function renderMenuPreview() {
+  const gridContainer = document.getElementById('menu-grid');
+  if (!gridContainer) return;
+
+  const isAr = window.currentLang === 'ar';
+
+  // Render a mixed selection of top items for the preview
+  const topItems = DATA.menuItems.filter(i => 
+    ['crevettes-12', 'mix-friture', 'cajun', 'fish-chips-adulte', 'citronnade'].includes(i.id)
+  ).slice(0, 3); // pick 3
+  
+  gridContainer.innerHTML = topItems.map(item => `
+    <div class="bg-white border-2 border-primary rounded-[1rem] flex flex-col relative transition-transform hover:-translate-y-1 block-shadow overflow-hidden">
+      ${item.image ? `<div class="h-32 w-full"><img class="w-full h-full object-cover" src="${getLocalImageUrl(item)}" alt="${item.name}"></div>` : ''}
+      <div class="p-4 lg:p-5 flex flex-col gap-3">
+        <div class="flex justify-between items-start">
+          <div class="text-3xl">${item.image ? '' : item.emoji}</div>
+          <div class="bg-secondary-container/20 text-tertiary font-bold px-3 py-1 text-sm rounded-full border border-secondary-container/30 ml-auto">${item.price} DT</div>
+        </div>
+        <div>
+          <h3 class="font-headline-md text-lg text-primary mb-1">
+            <span class="lang-fr">${item.name}</span>
+            <span class="lang-ar">${item.nameAr || item.name}</span>
+          </h3>
+          <p class="text-on-surface-variant font-body-md text-xs leading-relaxed">
+            <span class="lang-fr">${item.description}</span>
+            <span class="lang-ar">${item.descriptionAr || item.description}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// --- Menu Page Initialization ---
+function initFullMenu() {
+  const container = document.getElementById('full-menu-container');
+  const tabsContainer = document.getElementById('full-menu-tabs');
+  if (!container) return;
+
+  const isAr = window.currentLang === 'ar';
+
+  // Render categories in sections or filter
+  // Let's do a smooth scrolling anchor nav for category tabs
+  if (tabsContainer) {
+    tabsContainer.innerHTML = DATA.categories.map(cat => `
+      <a href="#cat-${cat.id}" class="px-6 py-2 rounded-full border-2 border-primary text-primary font-label-bold font-bold hover:bg-secondary-container hover:text-primary transition-colors block-shadow">
+        <span class="lang-fr">${cat.name}</span>
+        <span class="lang-ar">${cat.nameAr || cat.name}</span>
+      </a>
+    `).join('');
+  }
+
+  container.innerHTML = DATA.categories.map(cat => {
+    const catItems = DATA.menuItems.filter(i => i.category === cat.id);
+    const itemsHtml = catItems.map(item => `
+      <div class="menu-card">
+        <div class="menu-card-img" aria-hidden="true">
+          ${item.image ? `<img class="w-full h-full object-cover" src="${getLocalImageUrl(item)}" alt="${item.name}" loading="lazy" onerror="this.outerHTML='<span style=&quot;font-size:2.5rem&quot;>${item.emoji}</span>'">` : `<span style="font-size:2.5rem">${item.emoji}</span>`}
+        </div>
+        <div class="menu-card-content">
+          <div class="menu-card-header">
+            <h3 class="menu-card-title text-base">
+              <span class="lang-fr">${item.name}</span>
+              <span class="lang-ar">${item.nameAr || item.name}</span>
+            </h3>
+            <span class="menu-card-price text-sm">${item.price} DT</span>
+          </div>
+          <p class="menu-card-desc text-xs">
+            <span class="lang-fr">${item.description}</span>
+            <span class="lang-ar">${item.descriptionAr || item.description}</span>
+          </p>
+          <div class="flex items-center justify-between mt-auto pt-2 border-t border-primary/10">
+            <span class="text-[10px] text-outline uppercase tracking-wider font-bold">
+              <span class="lang-fr">Frais & Pop</span>
+              <span class="lang-ar">طازج ولذيذ</span>
+            </span>
+            <button onclick="addToCart('${item.id}')" class="bg-primary hover:bg-secondary hover:text-primary text-white text-xs px-3 py-1.5 rounded-full font-bold transition-all duration-200 border-2 border-primary flex items-center gap-1 shadow-sm hover:scale-105 active:scale-95">
+              <span class="lang-fr">+ Ajouter</span>
+              <span class="lang-ar">+ أضف</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    let noteHtml = '';
+    if (cat.id === 'seafood') {
+      noteHtml = `
+        <div class="sauce-note" style="margin-top: 1rem; width: 100%;">
+          <strong class="lang-fr">Sauces disponibles :</strong>
+          <strong class="lang-ar">الصلصات المتوفرة :</strong> <br/>
+          <span class="lang-fr">Sauce tartar, sauce dynamite, sauce cajon, citron et d'ail, et beurre fondu avec l'ail.</span>
+          <span class="lang-ar">صوص تارتار، صوص داينمايت، صوص كاجون، الليمون والثوم، وزبدة الثوم المذابة.</span>
+        </div>
+      `;
+    }
+
+    return `
+      <div id="cat-${cat.id}" class="category-section fade-element">
+        <h2 class="category-heading">
+          <span class="lang-fr">${cat.name}</span>
+          <span class="lang-ar">${cat.nameAr || cat.name}</span>
+        </h2>
+        <div class="menu-list">
+          ${itemsHtml}
+        </div>
+        ${noteHtml}
+      </div>
+    `;
+  }).join('');
+  
+  // Call initAnimations to observe newly added fade-elements
+  initAnimations();
+}
+
+// --- Mobile Menu Initialization ---
+function initMobileMenu() {
+  const btnOpen = document.getElementById('mobile-menu-btn');
+  const btnClose = document.getElementById('mobile-menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (btnOpen && btnClose && mobileMenu) {
+    btnOpen.addEventListener('click', () => {
+      mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+      mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+    });
+
+    btnClose.addEventListener('click', () => {
+      mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+      mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+        mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+      });
+    });
+  }
+}
+
+// --- Reservation Form Logic ---
+let formInitialized = false;
+
+function updateFormOptions() {
+  const guestsSelect = document.getElementById('guests');
+  const timeSelect = document.getElementById('time');
+  const isAr = window.currentLang === 'ar';
+  
+  if (!guestsSelect || !timeSelect) return;
+  
+  const currentGuest = guestsSelect.value;
+  const currentTime = timeSelect.value;
+  
+  guestsSelect.innerHTML = '';
+  timeSelect.innerHTML = '';
+  
+  const defaultOption = document.createElement('option');
+  defaultOption.value = '';
+  defaultOption.textContent = isAr ? 'عدد الضيوف' : 'Nombre de personnes';
+  defaultOption.selected = true;
+  defaultOption.disabled = true;
+  guestsSelect.appendChild(defaultOption);
+
+  for (let i = 1; i <= 20; i++) {
+    const option = document.createElement('option');
+    option.value = i;
+    option.textContent = i === 1 
+      ? (isAr ? 'شخص 1' : '1 Personne') 
+      : (isAr ? `${i} أشخاص` : `${i} Personnes`);
+    guestsSelect.appendChild(option);
+  }
+
+  timeSelect.innerHTML = `<option value="" disabled selected>${isAr ? 'اختر الوقت' : "Sélectionner l'heure"}</option>` + 
+    DATA.timeSlots.map(t => `<option value="${t}">${t}</option>`).join('');
+    
+  if (currentGuest) guestsSelect.value = currentGuest;
+  if (currentTime) timeSelect.value = currentTime;
+}
+
+function initFormElements() {
+  if (formInitialized) return;
+  
+  const form = document.getElementById('reservation-form');
+  if (!form) return;
+  
+  formInitialized = true;
+  
+  updateFormOptions();
+
+  // Set default date to today
+  const dateInput = document.getElementById('date');
+  const today = new Date();
+  const offset = today.getTimezoneOffset();
+  const localToday = new Date(today.getTime() - (offset * 60 * 1000));
+  const localDateStr = localToday.toISOString().split('T')[0];
+  dateInput.value = dateInput.value || localDateStr;
+  dateInput.min = localDateStr;
+
+  initStepper();
+
+  // Remove previous event listener to avoid duplicates
+  form.removeEventListener('submit', handleReservationSubmit);
+  form.addEventListener('submit', handleReservationSubmit);
+
+  // Clear validation on input
+  form.querySelectorAll('input, select, textarea').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('border-error'));
+    el.addEventListener('change', () => el.classList.remove('border-error'));
+  });
+}
+
+function initStepper() {
+  const steps = document.querySelectorAll('.step-content');
+  const indicators = document.querySelectorAll('.step-indicator');
+  const progressBar = document.getElementById('step-progress');
+  const nextBtns = document.querySelectorAll('.btn-next');
+  const prevBtns = document.querySelectorAll('.btn-prev');
+  const branchError = document.getElementById('branch-error');
+
+  const updateStepper = (targetStep) => {
+    // Basic validation before moving forward
+    if (targetStep === 2) {
+      if (!document.querySelector('input[name="branch"]:checked')) {
+        if (branchError) {
+          branchError.classList.remove('hidden');
+          branchError.classList.add('animate-shake');
+          branchError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setTimeout(() => branchError.classList.remove('animate-shake'), 400);
+        }
+        return;
+      } else {
+        if (branchError) branchError.classList.add('hidden');
+      }
+    } else if (targetStep === 3) {
+      const guests = document.getElementById('guests').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      let valid = true;
+      let firstInvalid = null;
+
+      if (!guests) { 
+        const el = document.getElementById('guests');
+        el.classList.add('border-error', 'animate-shake');
+        setTimeout(() => el.classList.remove('animate-shake'), 400);
+        valid = false;
+        if (!firstInvalid) firstInvalid = el;
+      }
+      if (!date) { 
+        const el = document.getElementById('date');
+        el.classList.add('border-error', 'animate-shake');
+        setTimeout(() => el.classList.remove('animate-shake'), 400);
+        valid = false;
+        if (!firstInvalid) firstInvalid = el;
+      }
+      if (!time) { 
+        const el = document.getElementById('time');
+        el.classList.add('border-error', 'animate-shake');
+        setTimeout(() => el.classList.remove('animate-shake'), 400);
+        valid = false;
+        if (!firstInvalid) firstInvalid = el;
+      }
+      if (!valid) {
+        if (firstInvalid) firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+    }
+
+    // Show target
+    const targetEl = document.getElementById(`step-${targetStep}`);
+    const container = document.getElementById('stepper-container');
+    
+    // Lock current height
+    container.style.height = `${container.offsetHeight}px`;
+    
+    // Hide all steps
+    steps.forEach(step => {
+      if (step !== targetEl) {
+        step.classList.remove('opacity-100', 'pointer-events-auto', 'translate-x-0', '-translate-x-8', 'translate-x-8', 'relative');
+        step.classList.add('opacity-0', 'pointer-events-none', 'absolute', 'top-0', 'left-0', 'w-full');
+        
+        const stepNum = parseInt(step.id.split('-')[1]);
+        if (stepNum < targetStep) {
+          step.classList.add(window.currentLang === 'ar' ? 'translate-x-8' : '-translate-x-8');
+        } else {
+          step.classList.add(window.currentLang === 'ar' ? '-translate-x-8' : 'translate-x-8');
+        }
+      }
+    });
+
+    setTimeout(() => {
+      targetEl.classList.remove('opacity-0', 'pointer-events-none', '-translate-x-8', 'translate-x-8', 'absolute', 'top-0', 'left-0', 'w-full');
+      targetEl.classList.add('opacity-100', 'pointer-events-auto', 'translate-x-0', 'relative');
+      
+      // Update container height smoothly
+      container.style.height = `${targetEl.offsetHeight}px`;
+      
+      // Restore auto height after transition
+      setTimeout(() => {
+        container.style.height = 'auto';
+      }, 300);
+    }, 10);
+
+    // Update indicators
+    indicators.forEach(indicator => {
+      const num = parseInt(indicator.dataset.step);
+      const circle = indicator.querySelector('div');
+      const text = indicator.querySelector('span');
+      if (num < targetStep) {
+        circle.className = 'w-8 h-8 rounded-full border-2 border-primary bg-primary text-white flex items-center justify-center font-bold text-sm mb-1 transition-colors duration-300';
+        circle.innerHTML = '<span class="material-symbols-outlined text-sm">check</span>';
+        text.className = 'text-[11px] uppercase tracking-wider font-bold text-primary transition-colors duration-300';
+      } else if (num === targetStep) {
+        circle.className = 'w-8 h-8 rounded-full border-2 border-tertiary bg-tertiary text-white flex items-center justify-center font-bold text-sm mb-1 transition-colors duration-300';
+        circle.innerHTML = num;
+        text.className = 'text-[11px] uppercase tracking-wider font-bold text-tertiary transition-colors duration-300';
+      } else {
+        circle.className = 'w-8 h-8 rounded-full border-2 border-outline-variant bg-surface-container-lowest text-outline-variant flex items-center justify-center font-bold text-sm mb-1 transition-colors duration-300';
+        circle.innerHTML = num;
+        text.className = 'text-[11px] uppercase tracking-wider font-bold text-outline-variant transition-colors duration-300';
+      }
+    });
+
+    // Update progress
+    progressBar.style.width = targetStep === 1 ? '0%' : targetStep === 2 ? '50%' : '100%';
+  };
+
+  nextBtns.forEach(btn => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      updateStepper(parseInt(btn.dataset.next));
+    };
+  });
+
+  prevBtns.forEach(btn => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      updateStepper(parseInt(btn.dataset.prev));
+    };
+  });
+  
+  // Set initial position
+  steps.forEach((step, index) => {
+      if(index > 0) step.classList.add(window.currentLang === 'ar' ? '-translate-x-8' : 'translate-x-8');
+  });
+}
+
+function validateTunisianPhone(phone) {
+  // Strip whitespace, allow valid lengths like 8 digits or with +216 prefix
+  const cleaned = phone.replace(/\s/g, '');
+  const pattern = /^(?:(?:\+|00)216)?\d{8}$/;
+  return pattern.test(cleaned);
+}
+
+function handleReservationSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  
+  // Prevent premature submission on Enter press in Step 1 or Step 2
+  const step3El = document.getElementById('step-3');
+  if (step3El && !step3El.classList.contains('opacity-100')) {
+    const activeStepEl = document.querySelector('.step-content.opacity-100');
+    if (activeStepEl) {
+      const nextBtn = activeStepEl.querySelector('.btn-next');
+      if (nextBtn) nextBtn.click();
+    }
+    return;
+  }
+  
+  const branchRadio = document.querySelector('input[name="branch"]:checked');
+  const nameEl = document.getElementById('name');
+  const phoneEl = document.getElementById('phone');
+  const guestsEl = document.getElementById('guests');
+  const dateEl = document.getElementById('date');
+  const timeEl = document.getElementById('time');
+  const requestsEl = document.getElementById('requests');
+
+  let isValid = true;
+  let firstInvalid = null;
+
+  if (!branchRadio) {
+    isValid = false;
+  }
+  if (!nameEl.value.trim()) {
+    nameEl.classList.add('border-error', 'animate-shake');
+    setTimeout(() => nameEl.classList.remove('animate-shake'), 400);
+    if (!firstInvalid) firstInvalid = nameEl;
+    isValid = false;
+  }
+  if (!validateTunisianPhone(phoneEl.value)) {
+    phoneEl.classList.add('border-error', 'animate-shake');
+    setTimeout(() => phoneEl.classList.remove('animate-shake'), 400);
+    if (!firstInvalid) firstInvalid = phoneEl;
+    isValid = false;
+  }
+
+  if (!isValid) {
+    if (firstInvalid) firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  // Build whatsapp message
+  const [yy, mm, dd] = dateEl.value.split('-');
+  const dateFormatted = `${dd}/${mm}/${yy}`;
+  
+  let message = `Bonjour Shrimp Time, Réservation pour ${guestsEl.value} personnes le ${dateFormatted} à ${timeEl.value} à la branche ${branchRadio.value} Tel: ${phoneEl.value.trim()}`;
+  message += ` Nom: ${nameEl.value.trim()}`;
+  if (requestsEl.value.trim()) {
+    message += ` Demandes: ${requestsEl.value.trim()}`;
+  }
+
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappNumber = DATA.phone.replace("+", "");
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.innerHTML;
+  btn.innerHTML = window.currentLang === 'ar' ? "تم إرسال الطلب ! ✓" : "Demande envoyée ! ✓";
+  btn.classList.replace('bg-tertiary', 'bg-[#8B9A3D]');
+  btn.classList.replace('border-primary', 'border-[#8B9A3D]');
+  
+  showToast(window.currentLang === 'ar' ? "تمت إعادة توجيهك إلى واتساب لإتمام الحجز بنجاح" : "Redirection vers WhatsApp pour finaliser la réservation.");
+  
+  // Show Success Modal
+  const successModal = document.getElementById('success-modal');
+  if (successModal) {
+    // Reset animation by cloning SVG
+    const checkmark = successModal.querySelector('.success-checkmark');
+    if (checkmark) {
+      const newCheckmark = checkmark.cloneNode(true);
+      checkmark.parentNode.replaceChild(newCheckmark, checkmark);
+    }
+    successModal.classList.add('active');
+    setTimeout(() => {
+      successModal.classList.remove('active');
+    }, 4500); // hide after 4.5s
+  }
+
+  setTimeout(() => {
+    btn.innerHTML = originalText;
+    btn.classList.replace('bg-[#8B9A3D]', 'bg-tertiary');
+    btn.classList.replace('border-[#8B9A3D]', 'border-primary');
+  }, 5000);
+}
+
+function showToast(message, type = 'success') {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+  
+  const toast = document.createElement('div');
+  const bgClass = type === 'success' ? 'bg-[#8B9A3D]' : 'bg-error';
+  toast.className = `${bgClass} text-white px-6 py-3 rounded-full shadow-lg transform translate-y-10 opacity-0 transition-all duration-300 font-headline-md text-sm flex items-center gap-3 pointer-events-auto block-shadow mb-2`;
+  
+  toast.innerHTML = `
+    <span class="material-symbols-outlined text-xl">${type === 'success' ? 'check_circle' : 'error'}</span>
+    ${message}
+  `;
+  
+  container.appendChild(toast);
+  
+  setTimeout(() => {
+    toast.classList.remove('translate-y-10', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+  }, 50);
+  
+  setTimeout(() => {
+    toast.classList.remove('translate-y-0', 'opacity-100');
+    toast.classList.add('translate-y-10', 'opacity-0');
+    setTimeout(() => {
+    toast.remove();
+    }, 300);
+  }, 4000);
+}
+
+// --- Shopping Cart Business Logic ---
+let cart = {};
+
+// Initialize Cart on Load
+document.addEventListener("DOMContentLoaded", () => {
+  loadCart();
+  updateCartUI();
+});
+
+// Load cart from localStorage
+function loadCart() {
+  try {
+    const saved = localStorage.getItem("shrimptime_cart");
+    if (saved) {
+      cart = JSON.parse(saved);
+    } else {
+      cart = {};
+    }
+  } catch (e) {
+    cart = {};
+  }
+}
+
+// Save cart to localStorage
+function saveCart() {
+  try {
+    localStorage.setItem("shrimptime_cart", JSON.stringify(cart));
+  } catch (e) {
+    console.error("Failed to save cart", e);
+  }
+  updateCartUI();
+}
+
+// Add an item to the cart
+window.addToCart = function(itemId) {
+  const item = DATA.menuItems.find(i => i.id === itemId);
+  if (!item) return;
+
+  if (cart[itemId]) {
+    cart[itemId].quantity += 1;
+  } else {
+    cart[itemId] = {
+      id: itemId,
+      quantity: 1,
+      price: item.price
+    };
+  }
+  saveCart();
+  
+  // Show toast notification
+  const isAr = window.currentLang === 'ar';
+  const name = isAr ? (item.nameAr || item.name) : item.name;
+  showToast(isAr ? `تمت إضافة ${name} إلى السلة` : `${name} ajouté au panier.`);
+  
+  // Pulse animation on floating button
+  const floatBtn = document.getElementById("floating-cart-btn");
+  if (floatBtn) {
+    floatBtn.classList.add("scale-110", "rotate-6");
+    setTimeout(() => {
+      floatBtn.classList.remove("scale-110", "rotate-6");
+    }, 200);
+  }
+};
+
+// Update item quantity
+window.updateCartQuantity = function(itemId, change) {
+  if (!cart[itemId]) return;
+  
+  cart[itemId].quantity += change;
+  if (cart[itemId].quantity <= 0) {
+    delete cart[itemId];
+  }
+  saveCart();
+};
+
+// Update cart badge & drawer contents
+function updateCartUI() {
+  const badge = document.getElementById("cart-badge");
+  const container = document.getElementById("cart-items-container");
+  const totalPriceEl = document.getElementById("cart-total-price");
+  const floatingBtn = document.getElementById("floating-cart-btn");
+
+  let totalQty = 0;
+  let totalPrice = 0;
+  
+  // Clean cart items list
+  if (container) container.innerHTML = '';
+  
+  const isAr = window.currentLang === 'ar';
+  const hasItems = Object.keys(cart).length > 0;
+  
+  if (hasItems) {
+    // Show floating button
+    if (floatingBtn) floatingBtn.classList.remove("hidden");
+    
+    // Render items
+    Object.values(cart).forEach(cartItem => {
+      const item = DATA.menuItems.find(i => i.id === cartItem.id);
+      if (!item) return;
+      
+      totalQty += cartItem.quantity;
+      const subtotal = cartItem.quantity * item.price;
+      totalPrice += subtotal;
+      
+      const itemName = isAr ? (item.nameAr || item.name) : item.name;
+      const imgUrl = getLocalImageUrl(item);
+      const finalImgUrl = imgUrl;
+      
+      if (container) {
+        const itemHtml = `
+          <div class="flex items-center gap-3 bg-white p-3 rounded-xl border border-primary/10 shadow-sm">
+            <div class="h-14 w-14 rounded-lg overflow-hidden border border-primary/10 shrink-0 bg-slate-50 flex items-center justify-center">
+              ${item.image ? `<img class="w-full h-full object-cover" src="${finalImgUrl}" alt="${itemName}" onerror="this.outerHTML='<span class=&quot;text-xl&quot;>${item.emoji}</span>'">` : `<span class="text-xl">${item.emoji}</span>`}
+            </div>
+            <div class="flex-1 min-w-0">
+              <h4 class="font-headline-md text-sm text-primary truncate">${itemName}</h4>
+              <p class="text-xs text-tertiary font-bold mt-1">${item.price} DT</p>
+            </div>
+            <div class="flex flex-col items-end gap-1 shrink-0">
+              <div class="flex items-center gap-2 border-2 border-primary/20 rounded-full px-2 py-0.5 bg-slate-50 text-xs">
+                <button onclick="updateCartQuantity('${cartItem.id}', -1)" class="w-4 h-4 flex items-center justify-center font-bold text-primary hover:text-secondary hover:scale-110 transition-transform">-</button>
+                <span class="font-bold text-primary px-0.5">${cartItem.quantity}</span>
+                <button onclick="updateCartQuantity('${cartItem.id}', 1)" class="w-4 h-4 flex items-center justify-center font-bold text-primary hover:text-secondary hover:scale-110 transition-transform">+</button>
+              </div>
+              <span class="text-xs font-extrabold text-primary">${subtotal} DT</span>
+            </div>
+          </div>
+        `;
+        container.insertAdjacentHTML('beforeend', itemHtml);
+      }
+    });
+  } else {
+    // Hide floating button if cart is empty
+    if (floatingBtn) floatingBtn.classList.add("hidden");
+    
+    if (container) {
+      container.innerHTML = `
+        <div class="flex flex-col items-center justify-center py-12 text-center text-outline">
+          <span class="material-symbols-outlined text-5xl mb-2 text-primary/30">shopping_cart_off</span>
+          <p class="lang-fr text-sm">Votre panier est vide</p>
+          <p class="lang-ar text-sm">سلتك فارغة</p>
+        </div>
+      `;
+    }
+  }
+
+  // Update total Qty badge
+  if (badge) {
+    badge.textContent = totalQty;
+  }
+  
+  // Update total price
+  if (totalPriceEl) {
+    totalPriceEl.textContent = `${totalPrice} DT`;
+  }
+}
+
+// Toggle Cart Drawer
+window.toggleCart = function(isOpen) {
+  const drawer = document.getElementById("cart-drawer");
+  const overlay = document.getElementById("cart-overlay");
+  
+  if (isOpen) {
+    if (drawer) drawer.classList.add("active");
+    if (overlay) overlay.classList.add("active");
+    document.body.classList.add("overflow-hidden");
+  } else {
+    if (drawer) drawer.classList.remove("active");
+    if (overlay) overlay.classList.remove("active");
+    document.body.classList.remove("overflow-hidden");
+  }
+};
+
+// Listen for custom langChanged event to update cart item names
+window.addEventListener('langChanged', () => {
+  updateCartUI();
+});
+
+// Checkout via WhatsApp
+window.checkoutWhatsApp = function() {
+  if (Object.keys(cart).length === 0) return;
+  
+  const isAr = window.currentLang === 'ar';
+  
+  // Find out branch if reservation form is present and has selected branch
+  let branchName = "";
+  const selectedBranchEl = document.querySelector('input[name="branch"]:checked');
+  if (selectedBranchEl) {
+    branchName = selectedBranchEl.value;
+  }
+  
+  // Build items message
+  let orderDetails = isAr ? "*تفاصيل الطلب:*\n" : "*Détails de la commande:*\n";
+  let total = 0;
+  
+  Object.values(cart).forEach((cartItem, idx) => {
+    const item = DATA.menuItems.find(i => i.id === cartItem.id);
+    if (!item) return;
+    
+    const itemName = isAr ? (item.nameAr || item.name) : item.name;
+    const subtotal = cartItem.quantity * item.price;
+    total += subtotal;
+    
+    orderDetails += `${idx + 1}. ${itemName} (x${cartItem.quantity}) - ${subtotal} DT\n`;
+  });
+  
+  orderDetails += isAr ? `\n*المجموع الإجمالي:* ${total} DT` : `\n*Total:* ${total} DT`;
+  
+  if (branchName) {
+    orderDetails += isAr ? `\n*الفرع:* ${branchName}` : `\n*Branche:* ${branchName}`;
+  }
+  
+  let mainMessage = isAr 
+    ? `مرحباً شريمب تايم، أود تقديم طلب جديد:\n\n${orderDetails}`
+    : `Bonjour Shrimp Time, je voudrais passer une commande:\n\n${orderDetails}`;
+    
+  const encoded = encodeURIComponent(mainMessage);
+  const whatsappUrl = `https://wa.me/${DATA.phone.replace("+", "")}?text=${encoded}`;
+  
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  
+  toggleCart(false);
+};
+
+</script>
+
+  <!-- Toast container -->
+  <div id="toast-container" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-[150] flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Floating Cart Button -->
+  <button id="floating-cart-btn" class="floating-cart-btn hidden" onclick="toggleCart(true)">
+    <span class="material-symbols-outlined text-2xl">shopping_cart</span>
+    <span id="cart-badge" class="cart-badge">0</span>
+  </button>
+
+  <!-- Cart Overlay -->
+  <div id="cart-overlay" class="cart-overlay" onclick="toggleCart(false)"></div>
+
+  <!-- Cart Drawer -->
+  <div id="cart-drawer" class="cart-drawer">
+    <!-- Drawer Header -->
+    <div class="p-4 border-b-2 border-primary flex items-center justify-between bg-primary text-white">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined">shopping_basket</span>
+        <h3 class="font-headline-md text-lg">
+          <span class="lang-fr">Mon Panier</span>
+          <span class="lang-ar">سلتي</span>
+        </h3>
+      </div>
+      <button onclick="toggleCart(false)" class="h-8 w-8 flex items-center justify-center bg-white text-primary rounded-full hover:bg-secondary-container transition-colors">
+        <span class="material-symbols-outlined text-lg">close</span>
+      </button>
+    </div>
+
+    <!-- Drawer Body (Scrollable items list) -->
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-4 space-y-3 bg-slate-50">
+      <!-- Items dynamically rendered here -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-4 border-t-2 border-primary bg-white space-y-4">
+      <div class="flex justify-between items-center font-headline-md text-primary">
+        <span class="lang-fr text-sm">Total</span>
+        <span class="lang-ar text-sm">المجموع الإجمالي</span>
+        <span id="cart-total-price" class="text-xl font-extrabold text-tertiary">0 DT</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="w-full py-3 bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold rounded-full flex items-center justify-center gap-2 border-2 border-primary block-shadow btn-hover-effect transition-all text-sm">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.116-2.905-6.993C16.557 1.87 14.08 .836 11.446.836 6.01.836 1.59 5.253 1.587 10.693c-.001 1.705.452 3.37 1.31 4.8l-.859 3.135 3.208-.841zm12.338-5.32c-.318-.159-1.885-.93-2.179-1.036-.294-.107-.507-.159-.721.159-.214.318-.83.1-1.017.214-.188.214-.376.242-.695.083-.319-.159-1.348-.497-2.568-1.585-.949-.847-1.59-1.893-1.776-2.212-.187-.318-.02-.49.139-.648.143-.142.318-.372.477-.559.159-.187.213-.319.319-.533.106-.214.053-.401-.027-.559-.079-.16-.721-1.741-.987-2.384-.26-.628-.523-.541-.721-.551-.186-.01-.399-.011-.612-.011-.214 0-.56.08-.853.4-.294.32-1.121 1.096-1.121 2.673s1.148 3.1 1.307 3.314c.159.214 2.257 3.447 5.468 4.832.764.329 1.36.526 1.823.673.768.243 1.467.209 2.02.127.616-.093 1.885-.77 2.152-1.513.267-.743.267-1.38.188-1.513-.079-.133-.294-.213-.612-.372z"/></svg>
+        <span class="lang-fr">Commander via WhatsApp</span>
+        <span class="lang-ar">إرسال الطلب عبر واتساب</span>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
