@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Shrimp Time | Page Non Trouvée - 404</title>
+  
+  <link rel="icon" type="image/png" href="public/favicon.png">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@400;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#042A48",
+            "on-surface": "#042A48",
+            "background": "#f8fafc",
+            "secondary": "#FFE400",
+            "primary": "#042A48",
+            "tertiary": "#9BA31C",
+            "surface": "#ffffff",
+            "on-background": "#042A48"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "label-bold": ["Be Vietnam Pro"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Be Vietnam Pro"],
+            "body-lg": ["Be Vietnam Pro"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"]
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .block-shadow {
+      box-shadow: 4px 4px 0px 0px rgba(4, 42, 72, 0.15);
+    }
+    .btn-hover-effect:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0px 0px rgba(4, 42, 72, 0.2);
+    }
+    .sandy-bg {
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .lost-shrimp-anim {
+      animation: floatLost 5s ease-in-out infinite;
+    }
+    @keyframes floatLost {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(4deg); }
+    }
+    /* Floating Background Decorations */
+    .floating-deco {
+      position: absolute;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.16;
+      filter: drop-shadow(0 10px 20px rgba(4, 42, 72, 0.06));
+      animation: floatDecoration 14s ease-in-out infinite alternate;
+    }
+    .floating-shrimp-1 {
+      width: 120px;
+      top: 15%;
+      left: 5%;
+      animation-duration: 16s;
+    }
+    .floating-crab-1 {
+      width: 110px;
+      top: 60%;
+      right: 5%;
+      animation-duration: 12s;
+    }
+    @media (min-width: 1024px) {
+      .floating-deco {
+        opacity: 0.28;
+      }
+      .floating-shrimp-1 {
+        width: 250px;
+      }
+      .floating-crab-1 {
+        width: 220px;
+      }
+    }
+    @keyframes floatDecoration {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) translateX(10px) rotate(8deg); }
+      100% { transform: translateY(10px) translateX(-10px) rotate(-8deg); }
+    }
+  </style>
+</head>
+<body class="bg-background font-body-md text-on-background selection:bg-secondary-container/30 sandy-bg min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Background Watermarks -->
+  <img src="public/shrimp1.png" class="floating-deco floating-shrimp-1" alt="" aria-hidden="true" onerror="this.remove()">
+  <img src="public/crap.png" class="floating-deco floating-crab-1" alt="" aria-hidden="true" onerror="this.remove()">
+
+  <!-- Language Switcher Top Bar -->
+  <header class="w-full max-w-4xl mx-auto px-4 pt-6 flex justify-between items-center z-10">
+    <a href="index.html" class="flex items-center gap-2 text-primary font-display-lg text-lg hover:opacity-80 transition-opacity">
+      <img src="https://dropshare.42web.io/1/files/8IFxJTeU9Z.png" alt="Logo" class="h-9 w-9 rounded-[10px] border-2 border-primary object-cover" onerror="this.src='public/favicon.png'" />
+      <span>Shrimp Time</span>
+    </a>
+    <div class="flex items-center gap-3 font-label-bold text-sm bg-primary/5 px-3 py-1.5 rounded-full border border-primary/10">
+      <button class="text-primary hover:text-secondary lang-btn btn-fr" onclick="setLang('fr')">FR</button>
+      <button class="text-primary hover:text-secondary lang-btn btn-ar" onclick="setLang('ar')">AR</button>
+    </div>
+  </header>
+
+  <!-- Error Card Container -->
+  <main class="flex-1 flex items-center justify-center px-4 py-12 z-10">
+    <div class="bg-white border-2 border-primary rounded-xl p-8 md:p-12 max-w-md w-full text-center block-shadow relative">
+      <div class="text-8xl mb-6 lost-shrimp-anim inline-block select-none">🦐🧭</div>
+      
+      <h1 class="font-display-lg text-4xl md:text-5xl text-primary mb-3">404</h1>
+      
+      <h2 class="font-headline-md text-xl md:text-2xl text-primary mb-4">
+        <span class="lang-fr">Perdu en mer ?</span>
+        <span class="lang-ar">ضائع في عرض البحر؟</span>
+      </h2>
+      
+      <p class="font-body-md text-on-surface-variant text-sm md:text-base mb-8 leading-relaxed">
+        <span class="lang-fr">Oups ! Cette page a sombré dans les profondeurs ou n'a jamais existé. Laissez-nous vous guider vers le rivage.</span>
+        <span class="lang-ar">عذراً! يبدو أن هذه الصفحة قد جرفتها الأمواج أو أنها غير موجودة. دعنا نساعدك في العودة إلى الشاطئ.</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="index.html" class="px-6 py-3 bg-secondary text-primary font-bold rounded-full border-2 border-primary block-shadow btn-hover-effect transition-all flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">home</span>
+          <span class="lang-fr">Accueil</span>
+          <span class="lang-ar">الرئيسية</span>
+        </a>
+        <a href="menu/index.html" class="px-6 py-3 bg-primary text-white font-bold rounded-full border-2 border-primary block-shadow btn-hover-effect transition-all flex items-center justify-center gap-2">
+          <span class="material-symbols-outlined text-lg">restaurant_menu</span>
+          <span class="lang-fr">Le Menu</span>
+          <span class="lang-ar">عرض القائمة</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full text-center py-6 border-t border-primary/10 mt-auto z-10 text-xs text-outline bg-white/60 backdrop-blur-md">
+    <span class="lang-fr">© 2026 Shrimp Time. Tous droits réservés.</span>
+    <span class="lang-ar">© 2026 شريمب تايم. جميع الحقوق محفوظة.</span>
+  </footer>
+
+  <script>
+    // Local i18n
+    const i18n = {
+      fr: {
+        title: "Shrimp Time | Page Non Trouvée - 404"
+      },
+      ar: {
+        title: "شريمب تايم | الصفحة غير موجودة - 404"
+      }
+    };
+
+    // Styling translation elements
+    const i18nStyles = document.createElement('style');
+    i18nStyles.textContent = `
+      @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700;800&display=swap');
+      html[dir="rtl"] { font-family: 'Alexandria', sans-serif; }
+      html[dir="rtl"] .font-display-lg, html[dir="rtl"] .font-headline-lg, html[dir="rtl"] .font-headline-md, html[dir="rtl"] .font-label-bold, html[dir="rtl"] .font-body-lg, html[dir="rtl"] .font-body-md { font-family: 'Alexandria', sans-serif !important; }
+      
+      .lang-btn { opacity: 0.6; transition: opacity 0.3s, border-color 0.3s; border-bottom: 2px solid transparent; }
+      html[lang="fr"] .btn-fr { opacity: 1; border-color: currentColor; }
+      html[lang="ar"] .btn-ar { opacity: 1; border-color: currentColor; }
+      
+      html[lang="ar"] .lang-fr { display: none !important; }
+      html:not([lang="ar"]) .lang-ar { display: none !important; }
+    `;
+    document.head.appendChild(i18nStyles);
+
+    window.setLang = function(lang) {
+      window.currentLang = lang;
+      localStorage.setItem('shrimp_lang', lang);
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      
+      if (i18n[lang]) {
+        document.title = i18n[lang].title;
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      window.currentLang = localStorage.getItem('shrimp_lang') || 'fr';
+      setLang(window.currentLang);
+    });
+  </script>
+</body>
+</html>
